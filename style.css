@@ -1,0 +1,223 @@
+body {
+    margin: 0px;
+    background: #101010;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(61, 61, 61, 0.39);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+background: #161616;
+}
+
+*::-webkit-scrollbar-thumb {
+background-color: rgba(82, 81, 81, 0.39);
+border-radius: 20px;
+border: 3px solid #161616;
+}
+
+.container {
+    margin: 40px 40px 0px 40px;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.header-line {
+    width: 5px;
+    margin: 0px 25px 0px 25px;
+    min-height: 80px;
+    flex-shrink: 0;
+    background: #272727;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.title-work {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 600;
+    color: #808080;
+}
+
+#header-1 {
+    flex-shrink: 0;
+}
+
+#header-3 {
+    flex-grow: 2;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;  
+}
+
+.content {
+    display: flex;
+}
+
+.body1 {
+    margin-top: 25px;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+/* Entrepreneur Industrial Designer Investor media proprieator */
+
+.body1-name{
+    margin-top: 12px;
+}
+
+.body1-margin {
+    margin-top: 16px;
+}
+
+.body1-line {
+    width: 262px;
+    height: 1px;
+    background-color: #242424
+}
+
+#highlighted-text {
+    font-family: 'poppins';
+    font-size: 36px;
+    font-weight: 600;
+    color: #3B3B3B;
+}
+
+.body1-death-text {
+    color: #5A5A5A;
+}
+
+.body1-occupation {
+    line-height: 26px;
+    white-space: pre;
+}
+
+.body1-worth-text {
+    font-weight: bold;
+}
+
+.body2 {
+    margin-left: 80px;
+    flex-grow: 2;
+}
+
+.body2-title {
+    text-align: right;
+    line-height: 30px;
+}
+
+.body2-timeline {
+    height: 400px;
+    overflow-y: auto;
+    margin-top: 8px;
+}
+
+.timeline {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.timeline-year {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 22px;
+    background: #2D2D2D;
+    padding: 0px 14px 0px 14px;
+    color: #E3E3E3;
+}
+
+.timeline-content {
+    display: inline-block;
+    font-family: Roboto;
+    color: white;
+    background-color: #1E1E1E;
+    padding: 14px 14px 14px 14px;
+}
+
+.body3 {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.body3-title {
+    margin-top: -25px;
+    margin-bottom: 2px;
+}
+
+.body3-achievement {
+    max-width: 300px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    background: #1E1E1E;
+    padding: 10px 20px 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid #777373;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 129.19%;
+    letter-spacing: 0.02em;
+    color: #D3D3D3;
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        margin: 40px 20px 0px 20px;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    #header-3 {
+        margin-top: 20px;
+        font-size: 22px;
+        flex-grow: 0;
+    }
+    .header-line {
+        margin: 0px 0px 0px 25px;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .body2 {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    .body2-title{
+        text-align: left;
+        line-height: normal;
+    }
+    .body2-timeline {
+        height: 500px;
+    }
+    .body3-title {
+        margin-top: 20px;
+    }
+}
